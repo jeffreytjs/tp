@@ -162,6 +162,8 @@ The `Storage` component,
 * can save `CommandHistory` objects in txt format and read it back.
 * can save the CLI-nic data in json format and read it back.
 
+<div style="page-break-after: always;"></div>
+
 ### Common classes
 
 Classes used by multiple components are in the `seedu.clinic.commons` package.
@@ -1729,7 +1731,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * **Alias**: A user-specified `String` that can be used to represent another `String` (e.g. typing `uw`
     is equivalent to typing `update ct/w` after this command `assignmacro a/uw cs/update ct/w` has been executed)
 
-#### Command Prefix
+### Command Prefix
 <div markdown="span" class="alert alert-info">:information_source:  Note: Command links are directed to
 supplier by default.
 </div>
