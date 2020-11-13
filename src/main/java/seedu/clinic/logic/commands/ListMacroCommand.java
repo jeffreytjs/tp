@@ -30,7 +30,7 @@ public class ListMacroCommand extends Command {
         List<Macro> macroList = model.getMacroList();
 
         if (macroList.isEmpty()) {
-            throw new CommandException(MESSAGE_EMPTY_LIST);
+            return new CommandResult(MESSAGE_EMPTY_LIST);
         }
 
         String resultString = formatListToString(macroList);

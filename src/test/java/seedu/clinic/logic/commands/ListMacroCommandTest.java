@@ -1,12 +1,10 @@
 package seedu.clinic.logic.commands;
 
 import static seedu.clinic.logic.commands.CommandTestUtil.assertCommandSuccess;
-import static seedu.clinic.testutil.Assert.assertThrows;
 import static seedu.clinic.testutil.TypicalMacro.getTypicalUserMacros;
 
 import org.junit.jupiter.api.Test;
 
-import seedu.clinic.logic.commands.exceptions.CommandException;
 import seedu.clinic.model.Clinic;
 import seedu.clinic.model.CommandHistory;
 import seedu.clinic.model.Model;
@@ -17,9 +15,11 @@ import seedu.clinic.model.UserPrefs;
 public class ListMacroCommandTest {
 
     @Test
-    public void execute_listMacroWithEmptyList_throwCommandException() {
+    public void execute_listMacroWithEmptyList_returnEmptyListMessage() {
         Model emptyModel = new ModelManager(new Clinic(), new UserPrefs(), new UserMacros(), new CommandHistory());
-        assertThrows(CommandException.class, () -> new ListMacroCommand().execute(emptyModel));
+        Model expectedModel = new ModelManager(new Clinic(), new UserPrefs(), new UserMacros(), new CommandHistory());
+        assertCommandSuccess(new ListMacroCommand(), emptyModel,
+                String.format(ListMacroCommand.MESSAGE_EMPTY_LIST), expectedModel);
     }
 
     @Test
