@@ -15,15 +15,15 @@ participant ":Model" as Model MODEL_COLOR
 end box
 
 create LogicManager
-[-> LogicManager : execute("add ct/s \n n/John Doe \n p/9876"...")
+[-> LogicManager : execute("add ct/s \n n/John Doe \n p/9876...")
 activate LogicManager
 
-LogicManager -> ClinicParser : parseCommand("add ct/s \n n/John Doe \n p/9876"...")
+LogicManager -> ClinicParser : parseCommand("add ct/s \n n/John Doe \n p/9876...")
 activate ClinicParser
 
 create AddCommandParser
 
-ClinicParser -> AddCommandParser ++ : parse("add ct/s \n n/John Doe \n p/9876"...")
+ClinicParser -> AddCommandParser ++ : parse("add ct/s \n n/John Doe \n p/9876...")
 activate AddCommandParser
 
 create AddCommand
