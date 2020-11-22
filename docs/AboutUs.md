@@ -28,7 +28,7 @@ You can reach us at the email `cs2103w144@gmail.com`
 
 * Role: Developer, Draft manager
 * Responsibilities:
-    * In charge of Documentation maintenance inclduding:
+    * In charge of Documentation maintenance including:
       * User stories
       * User guide
       * Developer guide
