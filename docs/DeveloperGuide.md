@@ -365,9 +365,9 @@ User wishes to enter an `add` command to add a supplier via `add ct/s n/John p/9
 Upon typing "a", the auto-complete context menu will pop up showing the possible auto-completed commands
 , mainly:
 
-* add ct/s n/ p/ e/ r/
+* add ct/s n/ p/ e/
 
-* add ct/w n/ p/ addr/ r/
+* add ct/w n/ p/ addr/
 
 * assignmacro a/ cs/
 
